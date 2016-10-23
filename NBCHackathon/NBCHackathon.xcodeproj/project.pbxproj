@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		417E9D1FBA21313DB0573268 /* Pods_NBCHackathonServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ADDA321EA3D59303890E31 /* Pods_NBCHackathonServiceExtension.framework */; };
+		6100C2221C457689004431DA /* GimbalAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611984861C2B622F008CFD8A /* GimbalAdapter.swift */; };
+		6100C2251C457689004431DA /* LastPayloadTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611984881C2B622F008CFD8A /* LastPayloadTableViewController.swift */; };
+		6100C2261C457689004431DA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611984871C2B622F008CFD8A /* HomeViewController.swift */; };
+		6100C2291C457689004431DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611984841C2B622F008CFD8A /* AppDelegate.swift */; };
+		6100C22A1C457689004431DA /* AddNamedUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611984821C2B622F008CFD8A /* AddNamedUserTableViewController.swift */; };
+		6100C22B1C457689004431DA /* TagsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6119848B1C2B622F008CFD8A /* TagsTableViewController.swift */; };
+		6100C22C1C457689004431DA /* TestingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6119848C1C2B622F008CFD8A /* TestingTableViewController.swift */; };
+		6100C22E1C457689004431DA /* BleatClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613D344A1C3F16AD00922016 /* BleatClient.swift */; };
+		6100C22F1C457689004431DA /* PushSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6119848A1C2B622F008CFD8A /* PushSettingsViewController.swift */; };
+		6100C2311C457689004431DA /* AddAliasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611984811C2B622F008CFD8A /* AddAliasTableViewController.swift */; };
+		6100C2321C457689004431DA /* NBCHackathonPushHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612DAD791C3C89C400BBEB37 /* NBCHackathonPushHandler.swift */; };
+		6100C2331C457689004431DA /* CustomEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611984851C2B622F008CFD8A /* CustomEventTableViewController.swift */; };
+		6100C2341C457689004431DA /* AddTagsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611984831C2B622F008CFD8A /* AddTagsTableViewController.swift */; };
+		6100C2381C457689004431DA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 613B21711C054859007C65E2 /* libz.tbd */; };
+		6100C2391C457689004431DA /* Gimbal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6119847D1C2B61D7008CFD8A /* Gimbal.framework */; };
+		6100C23B1C457689004431DA /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6138709A1C2B6DFC00036634 /* Roboto-Medium.ttf */; };
+		6100C23D1C457689004431DA /* cow.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6100C0081C456442004431DA /* cow.caf */; };
+		6100C23E1C457689004431DA /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 613870971C2B6DFC00036634 /* Roboto-Italic.ttf */; };
+		6100C23F1C457689004431DA /* cat.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6100C0071C456442004431DA /* cat.caf */; };
+		6100C2431C457689004431DA /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 613870931C2B6DFC00036634 /* Roboto-Black.ttf */; };
+		6100C2451C457689004431DA /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 613870951C2B6DFC00036634 /* Roboto-Bold.ttf */; };
+		6100C2471C457689004431DA /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 613870981C2B6DFC00036634 /* Roboto-Light.ttf */; };
+		6100C2481C457689004431DA /* frog.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6100C0091C456442004431DA /* frog.caf */; };
+		6100C2491C457689004431DA /* jd.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6100C00C1C456442004431DA /* jd.caf */; };
+		6100C24E1C457689004431DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613870801C2B65F100036634 /* Main.storyboard */; };
+		6100C24F1C457689004431DA /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 613870991C2B6DFC00036634 /* Roboto-LightItalic.ttf */; };
+		6100C2501C457689004431DA /* pig.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6100C00D1C456442004431DA /* pig.caf */; };
+		6100C2521C457689004431DA /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 613870961C2B6DFC00036634 /* Roboto-BoldItalic.ttf */; };
+		6100C2551C457689004431DA /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6138709B1C2B6DFC00036634 /* Roboto-MediumItalic.ttf */; };
+		6100C2561C457689004431DA /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 613870941C2B6DFC00036634 /* Roboto-BlackItalic.ttf */; };
+		6100C25A1C457689004431DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6138707D1C2B65EA00036634 /* LaunchScreen.storyboard */; };
+		6100C25C1C457689004431DA /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6138709E1C2B6DFC00036634 /* Roboto-ThinItalic.ttf */; };
+		6100C25D1C457689004431DA /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6138709C1C2B6DFC00036634 /* Roboto-Regular.ttf */; };
+		6100C25F1C457689004431DA /* hey_adam.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6100C00B1C456442004431DA /* hey_adam.caf */; };
+		6100C2601C457689004431DA /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6138709D1C2B6DFC00036634 /* Roboto-Thin.ttf */; };
+		611F3C8B1C627BAE008A0862 /* MessageCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611F3C841C627BAE008A0862 /* MessageCenterViewController.swift */; };
+		611F3CDB1C62D055008A0862 /* UAPushUI.strings in Resources */ = {isa = PBXBuildFile; fileRef = 611F3CD41C62D055008A0862 /* UAPushUI.strings */; };
+		6139ED511C49B5E000561330 /* SharedImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6139ED4A1C49B5E000561330 /* SharedImages.xcassets */; };
+		6163FBB81D7F89DA00B7A3A8 /* NBCHackathonServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6163FBB11D7F89DA00B7A3A8 /* NBCHackathonServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		619AD0B71DBBB5B700D4C47C /* NBCHackathon.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 619AD0B61DBBB5B700D4C47C /* NBCHackathon.mobileprovision */; };
+		619AD0BF1DBBD76100D4C47C /* UAMessageCenterDefaultStyle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 619AD0BE1DBBD76100D4C47C /* UAMessageCenterDefaultStyle.plist */; };
+		619AD0C91DBBE61400D4C47C /* NBClogoFlat.png in Resources */ = {isa = PBXBuildFile; fileRef = 619AD0C81DBBE61400D4C47C /* NBClogoFlat.png */; };
+		619AD0CD1DBC2BF400D4C47C /* NBCHackathonNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619AD0CC1DBC2BF400D4C47C /* NBCHackathonNotificationService.swift */; };
+		619AD0CF1DBC2BF900D4C47C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 619AD0CE1DBC2BF900D4C47C /* Info.plist */; };
+		619AD0D51DBC365C00D4C47C /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 619AD0D41DBC365C00D4C47C /* AirshipConfig.plist */; };
+		619AD0D71DBC390800D4C47C /* sad_face.imageset in Resources */ = {isa = PBXBuildFile; fileRef = 619AD0D61DBC390800D4C47C /* sad_face.imageset */; };
+		619AD0DB1DBC3E0D00D4C47C /* WillToLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619AD0DA1DBC3E0D00D4C47C /* WillToLiveViewController.swift */; };
+		619F43051C62DC3F00C35D3B /* InboxDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619F42FE1C62DC3F00C35D3B /* InboxDelegate.swift */; };
+		7140CC38716F10B764197850 /* Pods_NBCHackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E74B0754A39E50D9CB3306 /* Pods_NBCHackathon.framework */; };
+		762860141C80D09C00609B2E /* AssociatedIdentifiersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762860031C7E7B8B00609B2E /* AssociatedIdentifiersTableViewController.swift */; };
+		762860151C80D0AB00609B2E /* AddAssociatedIdentifiersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762860041C7E7B8B00609B2E /* AddAssociatedIdentifiersTableViewController.swift */; };
+		76E803A91C8627D000EF7E57 /* TagGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E803A71C8627D000EF7E57 /* TagGroupsTableViewController.swift */; };
+		7EFCD9417598CC28415CB1F3 /* Pods_NBCHackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ECBAA5A18FBFDCE8B20E81A /* Pods_NBCHackathon.framework */; };
+		A4BA7D371180AD8D638E08EE /* Pods_NBCHackathonServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F97099E19BBB56CB6E80D81 /* Pods_NBCHackathonServiceExtension.framework */; };
+		D5261D61AE84C96ECA585F29 /* Pods_NBCHackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6639D1DAE58B3D7B77067E16 /* Pods_NBCHackathon.framework */; };
+		F744082013E91E4CC65FD7B0 /* Pods_NBCHackathonServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B38C16A5BF0A75BE5336BB /* Pods_NBCHackathonServiceExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6163FBB61D7F89DA00B7A3A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCDA359B1B8D233A00950AD5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6163FBB01D7F89DA00B7A3A8;
+			remoteInfo = NBCHackathonServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6100C2631C457689004431DA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6100C2651C457689004431DA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6163FBBE1D7F8D1D00B7A3A8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61BA22A71D7F70BA00A2BFDC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6163FBB81D7F89DA00B7A3A8 /* NBCHackathonServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		04300A4B78A1B7486479F683 /* Pods-NBCHackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathon.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon.release.xcconfig"; sourceTree = "<group>"; };
+		09AB7DE8FF8F16466FF35842 /* Pods-NBCHackathonServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathonServiceExtension.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathonServiceExtension/Pods-NBCHackathonServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		0AF0B50ADAE5E1E0AB4F75AD /* Pods-NBCHackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathon.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		15E74B0754A39E50D9CB3306 /* Pods_NBCHackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBCHackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E378C7CD7B74497C8996F9 /* Pods-NBCHackathonServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathonServiceExtension.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathonServiceExtension/Pods-NBCHackathonServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		49BD2790958916A606F95741 /* Pods-NBCHackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathon.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		5205CF0AAC293B8D0E2679C4 /* Pods-NBCHackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathon.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon.release.xcconfig"; sourceTree = "<group>"; };
+		5F97099E19BBB56CB6E80D81 /* Pods_NBCHackathonServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBCHackathonServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6100C0071C456442004431DA /* cat.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = cat.caf; path = Resources/Shared/cat.caf; sourceTree = SOURCE_ROOT; };
+		6100C0081C456442004431DA /* cow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = cow.caf; path = Resources/Shared/cow.caf; sourceTree = SOURCE_ROOT; };
+		6100C0091C456442004431DA /* frog.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = frog.caf; path = Resources/Shared/frog.caf; sourceTree = SOURCE_ROOT; };
+		6100C00B1C456442004431DA /* hey_adam.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = hey_adam.caf; path = Resources/Shared/hey_adam.caf; sourceTree = SOURCE_ROOT; };
+		6100C00C1C456442004431DA /* jd.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = jd.caf; path = Resources/Shared/jd.caf; sourceTree = SOURCE_ROOT; };
+		6100C00D1C456442004431DA /* pig.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pig.caf; path = Resources/Shared/pig.caf; sourceTree = SOURCE_ROOT; };
+		6100C2691C457689004431DA /* NBCHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBCHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6119847D1C2B61D7008CFD8A /* Gimbal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gimbal.framework; path = Frameworks/Gimbal.framework; sourceTree = SOURCE_ROOT; };
+		611984811C2B622F008CFD8A /* AddAliasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AddAliasTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		611984821C2B622F008CFD8A /* AddNamedUserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AddNamedUserTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		611984831C2B622F008CFD8A /* AddTagsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AddTagsTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		611984841C2B622F008CFD8A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		611984851C2B622F008CFD8A /* CustomEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CustomEventTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		611984861C2B622F008CFD8A /* GimbalAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GimbalAdapter.swift; sourceTree = SOURCE_ROOT; };
+		611984871C2B622F008CFD8A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HomeViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		611984881C2B622F008CFD8A /* LastPayloadTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LastPayloadTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6119848A1C2B622F008CFD8A /* PushSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PushSettingsViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6119848B1C2B622F008CFD8A /* TagsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TagsTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6119848C1C2B622F008CFD8A /* TestingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TestingTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		6119849F1C2B6281008CFD8A /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = SOURCE_ROOT; };
+		611984A31C2B62C5008CFD8A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		611F3C841C627BAE008A0862 /* MessageCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MessageCenterViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		611F3C911C62836F008A0862 /* UA-UI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UA-UI-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		611F3CD41C62D055008A0862 /* UAPushUI.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = UAPushUI.strings; sourceTree = SOURCE_ROOT; };
+		612DAD791C3C89C400BBEB37 /* NBCHackathonPushHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NBCHackathonPushHandler.swift; sourceTree = SOURCE_ROOT; };
+		6138707E1C2B65EA00036634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		613870811C2B65F100036634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		613870931C2B6DFC00036634 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "Resources/Roboto/Roboto-Black.ttf"; sourceTree = SOURCE_ROOT; };
+		613870941C2B6DFC00036634 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "Resources/Roboto/Roboto-BlackItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		613870951C2B6DFC00036634 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "Resources/Roboto/Roboto-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		613870961C2B6DFC00036634 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "Resources/Roboto/Roboto-BoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		613870971C2B6DFC00036634 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "Resources/Roboto/Roboto-Italic.ttf"; sourceTree = SOURCE_ROOT; };
+		613870981C2B6DFC00036634 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "Resources/Roboto/Roboto-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		613870991C2B6DFC00036634 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "Resources/Roboto/Roboto-LightItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		6138709A1C2B6DFC00036634 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "Resources/Roboto/Roboto-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		6138709B1C2B6DFC00036634 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "Resources/Roboto/Roboto-MediumItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		6138709C1C2B6DFC00036634 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "Resources/Roboto/Roboto-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		6138709D1C2B6DFC00036634 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "Resources/Roboto/Roboto-Thin.ttf"; sourceTree = SOURCE_ROOT; };
+		6138709E1C2B6DFC00036634 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "Resources/Roboto/Roboto-ThinItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		6139ED4A1C49B5E000561330 /* SharedImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedImages.xcassets; sourceTree = SOURCE_ROOT; };
+		613B21711C054859007C65E2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		613D344A1C3F16AD00922016 /* BleatClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleatClient.swift; sourceTree = SOURCE_ROOT; };
+		614C40A01D88BCC700598F5C /* libUrbanAirship-iOS-AppExtensions.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libUrbanAirship-iOS-AppExtensions.a"; path = "../../../Library/Developer/Xcode/DerivedData/NBCHackathon-cdlqnwjqpuymsoflxncswjumlyrb/Build/Products/Debug-iphoneos/UrbanAirship-iOS-AppExtensions/libUrbanAirship-iOS-AppExtensions.a"; sourceTree = "<group>"; };
+		614C40A21D88C0B900598F5C /* AirshipAppExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipAppExtensions.framework; path = "../../../Library/Developer/Xcode/DerivedData/NBCHackathon-cdlqnwjqpuymsoflxncswjumlyrb/Build/Products/Debug-iphoneos/UrbanAirship-iOS-AppExtensions/AirshipAppExtensions.framework"; sourceTree = "<group>"; };
+		6163FBB11D7F89DA00B7A3A8 /* NBCHackathonServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NBCHackathonServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		619AD0B61DBBB5B700D4C47C /* NBCHackathon.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = NBCHackathon.mobileprovision; sourceTree = "<group>"; };
+		619AD0BE1DBBD76100D4C47C /* UAMessageCenterDefaultStyle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UAMessageCenterDefaultStyle.plist; sourceTree = SOURCE_ROOT; };
+		619AD0C61DBBE3D400D4C47C /* NBCHackathon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NBCHackathon.entitlements; sourceTree = SOURCE_ROOT; };
+		619AD0C71DBBE3E000D4C47C /* NBCHackathonServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NBCHackathonServiceExtension.entitlements; sourceTree = "<group>"; };
+		619AD0C81DBBE61400D4C47C /* NBClogoFlat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NBClogoFlat.png; sourceTree = SOURCE_ROOT; };
+		619AD0CC1DBC2BF400D4C47C /* NBCHackathonNotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NBCHackathonNotificationService.swift; path = NBCHackathonServiceExtension/NBCHackathonNotificationService.swift; sourceTree = "<group>"; };
+		619AD0CE1DBC2BF900D4C47C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NBCHackathonServiceExtension/Info.plist; sourceTree = "<group>"; };
+		619AD0D41DBC365C00D4C47C /* AirshipConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = AirshipConfig.plist; sourceTree = SOURCE_ROOT; };
+		619AD0D61DBC390800D4C47C /* sad_face.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sad_face.imageset; sourceTree = SOURCE_ROOT; };
+		619AD0DA1DBC3E0D00D4C47C /* WillToLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WillToLiveViewController.swift; sourceTree = SOURCE_ROOT; };
+		619F42FE1C62DC3F00C35D3B /* InboxDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxDelegate.swift; sourceTree = SOURCE_ROOT; };
+		61DDF4701C988FA000EFB911 /* AirshipKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AirshipKit.framework; path = ../Carthage/Build/iOS/AirshipKit.framework; sourceTree = "<group>"; };
+		61FA638A1C519A03000C1814 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		61FA638B1C519A03000C1814 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		6639D1DAE58B3D7B77067E16 /* Pods_NBCHackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBCHackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		762860031C7E7B8B00609B2E /* AssociatedIdentifiersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AssociatedIdentifiersTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		762860041C7E7B8B00609B2E /* AddAssociatedIdentifiersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AddAssociatedIdentifiersTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		76E803A71C8627D000EF7E57 /* TagGroupsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TagGroupsTableViewController.swift; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		7ECBAA5A18FBFDCE8B20E81A /* Pods_NBCHackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBCHackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8132014A4E576F2F14A5C86F /* Pods-NBCHackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathon.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		882C452C37A495AE2F2A6AF7 /* Pods-NBCHackathonServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathonServiceExtension.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathonServiceExtension/Pods-NBCHackathonServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		B4B38C16A5BF0A75BE5336BB /* Pods_NBCHackathonServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBCHackathonServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD7FCCC0D0372C9F0D94595 /* Pods-NBCHackathonServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathonServiceExtension.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathonServiceExtension/Pods-NBCHackathonServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		C2ADDA321EA3D59303890E31 /* Pods_NBCHackathonServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBCHackathonServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9C059F8182F493BED3CCA0 /* Pods-NBCHackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathon.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon.release.xcconfig"; sourceTree = "<group>"; };
+		DAB77C5728C89D9BD4E95B46 /* Pods-NBCHackathonServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathonServiceExtension.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathonServiceExtension/Pods-NBCHackathonServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		F577223416EB17F9414BCF45 /* Pods-NBCHackathonServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBCHackathonServiceExtension.release.xcconfig"; path = "../Pods/Target Support Files/Pods-NBCHackathonServiceExtension/Pods-NBCHackathonServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6100C2371C457689004431DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6100C2381C457689004431DA /* libz.tbd in Frameworks */,
+				6100C2391C457689004431DA /* Gimbal.framework in Frameworks */,
+				7EFCD9417598CC28415CB1F3 /* Pods_NBCHackathon.framework in Frameworks */,
+				7140CC38716F10B764197850 /* Pods_NBCHackathon.framework in Frameworks */,
+				D5261D61AE84C96ECA585F29 /* Pods_NBCHackathon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6163FBAE1D7F89DA00B7A3A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F744082013E91E4CC65FD7B0 /* Pods_NBCHackathonServiceExtension.framework in Frameworks */,
+				A4BA7D371180AD8D638E08EE /* Pods_NBCHackathonServiceExtension.framework in Frameworks */,
+				417E9D1FBA21313DB0573268 /* Pods_NBCHackathonServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6100C0061C45640D004431DA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				6100C0071C456442004431DA /* cat.caf */,
+				6100C0081C456442004431DA /* cow.caf */,
+				6100C0091C456442004431DA /* frog.caf */,
+				6100C00B1C456442004431DA /* hey_adam.caf */,
+				6100C00C1C456442004431DA /* jd.caf */,
+				6100C00D1C456442004431DA /* pig.caf */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		612DAD601C32F97E00BBEB37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61DDF4701C988FA000EFB911 /* AirshipKit.framework */,
+				61FA638A1C519A03000C1814 /* Fabric.framework */,
+				61FA638B1C519A03000C1814 /* Crashlytics.framework */,
+				613B21711C054859007C65E2 /* libz.tbd */,
+				6119847D1C2B61D7008CFD8A /* Gimbal.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		612DAD611C32F9C100BBEB37 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				619AD0D41DBC365C00D4C47C /* AirshipConfig.plist */,
+				619AD0C81DBBE61400D4C47C /* NBClogoFlat.png */,
+				611F3C911C62836F008A0862 /* UA-UI-Bridging-Header.h */,
+				611984A31C2B62C5008CFD8A /* Info.plist */,
+				619AD0BE1DBBD76100D4C47C /* UAMessageCenterDefaultStyle.plist */,
+				6139ED4A1C49B5E000561330 /* SharedImages.xcassets */,
+				619AD0D61DBC390800D4C47C /* sad_face.imageset */,
+				6119849F1C2B6281008CFD8A /* Config.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		613420361BD6C09B00236A18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				611F3CD41C62D055008A0862 /* UAPushUI.strings */,
+				6100C0061C45640D004431DA /* Sounds */,
+				6138707D1C2B65EA00036634 /* LaunchScreen.storyboard */,
+				613870801C2B65F100036634 /* Main.storyboard */,
+				619A0D3F1BE7F2A000D9E863 /* Roboto */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		614C410C1D89EB9100598F5C /* ServiceExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				619AD0CC1DBC2BF400D4C47C /* NBCHackathonNotificationService.swift */,
+				619AD0CE1DBC2BF900D4C47C /* Info.plist */,
+			);
+			name = ServiceExtensions;
+			sourceTree = "<group>";
+		};
+		616735B61BFD571700BB2476 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				6119848C1C2B622F008CFD8A /* TestingTableViewController.swift */,
+				611984851C2B622F008CFD8A /* CustomEventTableViewController.swift */,
+				611984881C2B622F008CFD8A /* LastPayloadTableViewController.swift */,
+			);
+			name = Testing;
+			sourceTree = "<group>";
+		};
+		616735B71BFD572D00BB2476 /* Push Settings */ = {
+			isa = PBXGroup;
+			children = (
+				762860031C7E7B8B00609B2E /* AssociatedIdentifiersTableViewController.swift */,
+				762860041C7E7B8B00609B2E /* AddAssociatedIdentifiersTableViewController.swift */,
+				611984811C2B622F008CFD8A /* AddAliasTableViewController.swift */,
+				611984821C2B622F008CFD8A /* AddNamedUserTableViewController.swift */,
+				611984831C2B622F008CFD8A /* AddTagsTableViewController.swift */,
+				6119848A1C2B622F008CFD8A /* PushSettingsViewController.swift */,
+				6119848B1C2B622F008CFD8A /* TagsTableViewController.swift */,
+				76E803A71C8627D000EF7E57 /* TagGroupsTableViewController.swift */,
+			);
+			name = "Push Settings";
+			sourceTree = "<group>";
+		};
+		619A0D3F1BE7F2A000D9E863 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				613870931C2B6DFC00036634 /* Roboto-Black.ttf */,
+				613870941C2B6DFC00036634 /* Roboto-BlackItalic.ttf */,
+				613870951C2B6DFC00036634 /* Roboto-Bold.ttf */,
+				613870961C2B6DFC00036634 /* Roboto-BoldItalic.ttf */,
+				613870971C2B6DFC00036634 /* Roboto-Italic.ttf */,
+				613870981C2B6DFC00036634 /* Roboto-Light.ttf */,
+				613870991C2B6DFC00036634 /* Roboto-LightItalic.ttf */,
+				6138709A1C2B6DFC00036634 /* Roboto-Medium.ttf */,
+				6138709B1C2B6DFC00036634 /* Roboto-MediumItalic.ttf */,
+				6138709C1C2B6DFC00036634 /* Roboto-Regular.ttf */,
+				6138709D1C2B6DFC00036634 /* Roboto-Thin.ttf */,
+				6138709E1C2B6DFC00036634 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Roboto;
+			sourceTree = "<group>";
+		};
+		7578119709916F4DF294CB33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8132014A4E576F2F14A5C86F /* Pods-NBCHackathon.debug.xcconfig */,
+				04300A4B78A1B7486479F683 /* Pods-NBCHackathon.release.xcconfig */,
+				882C452C37A495AE2F2A6AF7 /* Pods-NBCHackathonServiceExtension.debug.xcconfig */,
+				45E378C7CD7B74497C8996F9 /* Pods-NBCHackathonServiceExtension.release.xcconfig */,
+				0AF0B50ADAE5E1E0AB4F75AD /* Pods-NBCHackathon.debug.xcconfig */,
+				5205CF0AAC293B8D0E2679C4 /* Pods-NBCHackathon.release.xcconfig */,
+				09AB7DE8FF8F16466FF35842 /* Pods-NBCHackathonServiceExtension.debug.xcconfig */,
+				F577223416EB17F9414BCF45 /* Pods-NBCHackathonServiceExtension.release.xcconfig */,
+				49BD2790958916A606F95741 /* Pods-NBCHackathon.debug.xcconfig */,
+				CF9C059F8182F493BED3CCA0 /* Pods-NBCHackathon.release.xcconfig */,
+				BCD7FCCC0D0372C9F0D94595 /* Pods-NBCHackathonServiceExtension.debug.xcconfig */,
+				DAB77C5728C89D9BD4E95B46 /* Pods-NBCHackathonServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCDA359A1B8D233A00950AD5 = {
+			isa = PBXGroup;
+			children = (
+				619AD0C71DBBE3E000D4C47C /* NBCHackathonServiceExtension.entitlements */,
+				619AD0B61DBBB5B700D4C47C /* NBCHackathon.mobileprovision */,
+				CCDA35A51B8D233A00950AD5 /* NBCHackathon */,
+				614C410C1D89EB9100598F5C /* ServiceExtensions */,
+				CCDA35A41B8D233A00950AD5 /* Products */,
+				7578119709916F4DF294CB33 /* Pods */,
+				CDD2260CCA007F5DF7D95A13 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCDA35A41B8D233A00950AD5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6100C2691C457689004431DA /* NBCHackathon.app */,
+				6163FBB11D7F89DA00B7A3A8 /* NBCHackathonServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCDA35A51B8D233A00950AD5 /* NBCHackathon */ = {
+			isa = PBXGroup;
+			children = (
+				619AD0C61DBBE3D400D4C47C /* NBCHackathon.entitlements */,
+				612DAD601C32F97E00BBEB37 /* Frameworks */,
+				611984841C2B622F008CFD8A /* AppDelegate.swift */,
+				619AD0DA1DBC3E0D00D4C47C /* WillToLiveViewController.swift */,
+				611984871C2B622F008CFD8A /* HomeViewController.swift */,
+				613D344A1C3F16AD00922016 /* BleatClient.swift */,
+				611984861C2B622F008CFD8A /* GimbalAdapter.swift */,
+				612DAD791C3C89C400BBEB37 /* NBCHackathonPushHandler.swift */,
+				611F3C841C627BAE008A0862 /* MessageCenterViewController.swift */,
+				619F42FE1C62DC3F00C35D3B /* InboxDelegate.swift */,
+				616735B71BFD572D00BB2476 /* Push Settings */,
+				616735B61BFD571700BB2476 /* Testing */,
+				613420361BD6C09B00236A18 /* Resources */,
+				612DAD611C32F9C100BBEB37 /* Other Sources */,
+			);
+			path = NBCHackathon;
+			sourceTree = "<group>";
+		};
+		CDD2260CCA007F5DF7D95A13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				614C40A21D88C0B900598F5C /* AirshipAppExtensions.framework */,
+				614C40A01D88BCC700598F5C /* libUrbanAirship-iOS-AppExtensions.a */,
+				7ECBAA5A18FBFDCE8B20E81A /* Pods_NBCHackathon.framework */,
+				B4B38C16A5BF0A75BE5336BB /* Pods_NBCHackathonServiceExtension.framework */,
+				15E74B0754A39E50D9CB3306 /* Pods_NBCHackathon.framework */,
+				5F97099E19BBB56CB6E80D81 /* Pods_NBCHackathonServiceExtension.framework */,
+				6639D1DAE58B3D7B77067E16 /* Pods_NBCHackathon.framework */,
+				C2ADDA321EA3D59303890E31 /* Pods_NBCHackathonServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6100C21D1C457689004431DA /* NBCHackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6100C2661C457689004431DA /* Build configuration list for PBXNativeTarget "NBCHackathon" */;
+			buildPhases = (
+				311F6AC8345D7D666358DC09 /* [CP] Check Pods Manifest.lock */,
+				2BC9DDB45C2B05C615650922 /* [CP] Check Pods Manifest.lock */,
+				6100C2201C457689004431DA /* Sources */,
+				6100C2371C457689004431DA /* Frameworks */,
+				6100C23A1C457689004431DA /* Resources */,
+				6100C2631C457689004431DA /* Embed Frameworks */,
+				6100C2651C457689004431DA /* CopyFiles */,
+				25503FECD701ACF717C88E52 /* [CP] Embed Pods Frameworks */,
+				16240124DA1BC0C76C4870E4 /* [CP] Copy Pods Resources */,
+				00C4B439650E47B6C67E233D /* 📦 Embed Pods Frameworks */,
+				035C4B811AA83ED766ECF688 /* 📦 Copy Pods Resources */,
+				61BA22A71D7F70BA00A2BFDC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6163FBB71D7F89DA00B7A3A8 /* PBXTargetDependency */,
+			);
+			name = NBCHackathon;
+			productName = NBCHackathon;
+			productReference = 6100C2691C457689004431DA /* NBCHackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6163FBB01D7F89DA00B7A3A8 /* NBCHackathonServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6163FBB91D7F89DA00B7A3A8 /* Build configuration list for PBXNativeTarget "NBCHackathonServiceExtension" */;
+			buildPhases = (
+				E505E9FB6C02A656DB0B0C01 /* [CP] Check Pods Manifest.lock */,
+				6163FBAD1D7F89DA00B7A3A8 /* Sources */,
+				6163FBAE1D7F89DA00B7A3A8 /* Frameworks */,
+				6163FBAF1D7F89DA00B7A3A8 /* Resources */,
+				6163FBBE1D7F8D1D00B7A3A8 /* CopyFiles */,
+				A56BCB043DAB5E71E354A80D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBCHackathonServiceExtension;
+			productName = NBCHackathonServiceExtension;
+			productReference = 6163FBB11D7F89DA00B7A3A8 /* NBCHackathonServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCDA359B1B8D233A00950AD5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Urban Airship";
+				TargetAttributes = {
+					6100C21D1C457689004431DA = {
+						DevelopmentTeam = RT2J3E5RQP;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					6163FBB01D7F89DA00B7A3A8 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = RT2J3E5RQP;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = CCDA359E1B8D233A00950AD5 /* Build configuration list for PBXProject "NBCHackathon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				es,
+				fr,
+				it,
+				ja,
+				pt,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = CCDA359A1B8D233A00950AD5;
+			productRefGroup = CCDA35A41B8D233A00950AD5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6100C21D1C457689004431DA /* NBCHackathon */,
+				6163FBB01D7F89DA00B7A3A8 /* NBCHackathonServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6100C23A1C457689004431DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6100C23B1C457689004431DA /* Roboto-Medium.ttf in Resources */,
+				6100C23D1C457689004431DA /* cow.caf in Resources */,
+				6100C23E1C457689004431DA /* Roboto-Italic.ttf in Resources */,
+				6100C23F1C457689004431DA /* cat.caf in Resources */,
+				6100C2431C457689004431DA /* Roboto-Black.ttf in Resources */,
+				6100C2451C457689004431DA /* Roboto-Bold.ttf in Resources */,
+				6100C2471C457689004431DA /* Roboto-Light.ttf in Resources */,
+				6100C2481C457689004431DA /* frog.caf in Resources */,
+				6100C2491C457689004431DA /* jd.caf in Resources */,
+				619AD0C91DBBE61400D4C47C /* NBClogoFlat.png in Resources */,
+				6100C24E1C457689004431DA /* Main.storyboard in Resources */,
+				6100C24F1C457689004431DA /* Roboto-LightItalic.ttf in Resources */,
+				611F3CDB1C62D055008A0862 /* UAPushUI.strings in Resources */,
+				6100C2501C457689004431DA /* pig.caf in Resources */,
+				619AD0BF1DBBD76100D4C47C /* UAMessageCenterDefaultStyle.plist in Resources */,
+				619AD0D71DBC390800D4C47C /* sad_face.imageset in Resources */,
+				6100C2521C457689004431DA /* Roboto-BoldItalic.ttf in Resources */,
+				6100C2551C457689004431DA /* Roboto-MediumItalic.ttf in Resources */,
+				6100C2561C457689004431DA /* Roboto-BlackItalic.ttf in Resources */,
+				6139ED511C49B5E000561330 /* SharedImages.xcassets in Resources */,
+				6100C25A1C457689004431DA /* LaunchScreen.storyboard in Resources */,
+				6100C25C1C457689004431DA /* Roboto-ThinItalic.ttf in Resources */,
+				619AD0B71DBBB5B700D4C47C /* NBCHackathon.mobileprovision in Resources */,
+				6100C25D1C457689004431DA /* Roboto-Regular.ttf in Resources */,
+				619AD0D51DBC365C00D4C47C /* AirshipConfig.plist in Resources */,
+				6100C25F1C457689004431DA /* hey_adam.caf in Resources */,
+				6100C2601C457689004431DA /* Roboto-Thin.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6163FBAF1D7F89DA00B7A3A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619AD0CF1DBC2BF900D4C47C /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00C4B439650E47B6C67E233D /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		035C4B811AA83ED766ECF688 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16240124DA1BC0C76C4870E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25503FECD701ACF717C88E52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NBCHackathon/Pods-NBCHackathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BC9DDB45C2B05C615650922 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		311F6AC8345D7D666358DC09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A56BCB043DAB5E71E354A80D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-NBCHackathonServiceExtension/Pods-NBCHackathonServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E505E9FB6C02A656DB0B0C01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6100C2201C457689004431DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				762860151C80D0AB00609B2E /* AddAssociatedIdentifiersTableViewController.swift in Sources */,
+				762860141C80D09C00609B2E /* AssociatedIdentifiersTableViewController.swift in Sources */,
+				6100C2221C457689004431DA /* GimbalAdapter.swift in Sources */,
+				6100C2251C457689004431DA /* LastPayloadTableViewController.swift in Sources */,
+				6100C2261C457689004431DA /* HomeViewController.swift in Sources */,
+				6100C2291C457689004431DA /* AppDelegate.swift in Sources */,
+				6100C22A1C457689004431DA /* AddNamedUserTableViewController.swift in Sources */,
+				6100C22B1C457689004431DA /* TagsTableViewController.swift in Sources */,
+				611F3C8B1C627BAE008A0862 /* MessageCenterViewController.swift in Sources */,
+				6100C22C1C457689004431DA /* TestingTableViewController.swift in Sources */,
+				6100C22E1C457689004431DA /* BleatClient.swift in Sources */,
+				619F43051C62DC3F00C35D3B /* InboxDelegate.swift in Sources */,
+				6100C22F1C457689004431DA /* PushSettingsViewController.swift in Sources */,
+				6100C2311C457689004431DA /* AddAliasTableViewController.swift in Sources */,
+				6100C2321C457689004431DA /* NBCHackathonPushHandler.swift in Sources */,
+				6100C2331C457689004431DA /* CustomEventTableViewController.swift in Sources */,
+				619AD0DB1DBC3E0D00D4C47C /* WillToLiveViewController.swift in Sources */,
+				6100C2341C457689004431DA /* AddTagsTableViewController.swift in Sources */,
+				76E803A91C8627D000EF7E57 /* TagGroupsTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6163FBAD1D7F89DA00B7A3A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619AD0CD1DBC2BF400D4C47C /* NBCHackathonNotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6163FBB71D7F89DA00B7A3A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6163FBB01D7F89DA00B7A3A8 /* NBCHackathonServiceExtension */;
+			targetProxy = 6163FBB61D7F89DA00B7A3A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6138707D1C2B65EA00036634 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6138707E1C2B65EA00036634 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		613870801C2B65F100036634 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613870811C2B65F100036634 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6100C2671C457689004431DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49BD2790958916A606F95741 /* Pods-NBCHackathon.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = NBCHackathon.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RT2J3E5RQP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Variants/NBCHackathon/NBCHackathon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "-DNBCHackathon";
+				PRODUCT_BUNDLE_IDENTIFIER = com.submission.NBCHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UA-UI-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6100C2681C457689004431DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF9C059F8182F493BED3CCA0 /* Pods-NBCHackathon.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = NBCHackathon.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RT2J3E5RQP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Variants/NBCHackathon/NBCHackathon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "-DNBCHackathon";
+				PRODUCT_BUNDLE_IDENTIFIER = com.submission.NBCHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UA-UI-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6163FBBA1D7F89DA00B7A3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD7FCCC0D0372C9F0D94595 /* Pods-NBCHackathonServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = NBCHackathonServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = RT2J3E5RQP;
+				INFOPLIST_FILE = NBCHackathonServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.submission.NBCHackathon.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6163FBBB1D7F89DA00B7A3A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAB77C5728C89D9BD4E95B46 /* Pods-NBCHackathonServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_ENTITLEMENTS = NBCHackathonServiceExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RT2J3E5RQP;
+				INFOPLIST_FILE = NBCHackathonServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.submission.NBCHackathon.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CCDA35B51B8D233A00950AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		CCDA35B61B8D233A00950AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6100C2661C457689004431DA /* Build configuration list for PBXNativeTarget "NBCHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6100C2671C457689004431DA /* Debug */,
+				6100C2681C457689004431DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6163FBB91D7F89DA00B7A3A8 /* Build configuration list for PBXNativeTarget "NBCHackathonServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6163FBBA1D7F89DA00B7A3A8 /* Debug */,
+				6163FBBB1D7F89DA00B7A3A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCDA359E1B8D233A00950AD5 /* Build configuration list for PBXProject "NBCHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCDA35B51B8D233A00950AD5 /* Debug */,
+				CCDA35B61B8D233A00950AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCDA359B1B8D233A00950AD5 /* Project object */;
+}

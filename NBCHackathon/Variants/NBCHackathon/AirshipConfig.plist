@@ -1,0 +1,14 @@
+{
+	deviceAPIURL = "https://go.urbanairship.com/";
+	developmentAppKey = "A3hN0YOYS6G7X5PsdkXv3w";
+	developmentAppSecret = "BB-8M5RkSOeC4GQVbXAXEw";
+	productionLogLevel = 5;
+	developmentLogLevel = 5;
+	inProduction = NO;
+	"messageCenterStyleConfig" = "UAMessageCenterDefaultStyle";
+	customConfig = {
+		masterSecret = "tqH0V0yhR4ybFNEp_pAkwg";
+		"/gimbalApiKey" = "ccdb42b6-5a05-4f85-a930-46f023b16d78";
+		"/goatTrackerID" = "UA-77385372-1";
+	};
+}

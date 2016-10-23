@@ -1,0 +1,11 @@
+{
+	deviceAPIURL = "https://go.urbanairship.com/";
+	developmentAppKey = "A3hN0YOYS6G7X5PsdkXv3w";
+	developmentAppSecret = "BB-8M5RkSOeC4GQVbXAXEw";
+	productionLogLevel = 5;
+	developmentLogLevel = 5;
+	inProduction = NO;
+	customConfig = {
+		masterSecret = "tqH0V0yhR4ybFNEp_pAkwg";
+	};
+}
